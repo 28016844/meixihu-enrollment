@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>梅溪湖小初高贯通培养 2026 暑假招生简章</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0D1B3E;
+      --navy-mid: #1A2F6B;
+      --gold: #C9A84C;
+      --gold-light: #E8C96A;
+      --gold-pale: #F5E9C8;
+      --cream: #FAFAF5;
+      --text: #1A1A2E;
+      --text-muted: #5A6070;
+      --white: #FFFFFF;
+      --red-accent: #C0392B;
+      --border: #E0D9C0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(201,168,76,0.08) 0%, transparent 60%);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(201,168,76,0.04) 39px, rgba(201,168,76,0.04) 40px),
+        repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(201,168,76,0.04) 39px, rgba(201,168,76,0.04) 40px);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      margin-bottom: 32px;
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .hero-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(32px, 6vw, 68px);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.8s 0.15s ease both;
+    }
+
+    .hero-title span {
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(18px, 3vw, 28px);
+      font-weight: 600;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.8s 0.3s ease both;
+    }
+
+    .hero-org {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.8s 0.4s ease both;
+    }
+
+    .hero-slogan {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05));
+      border-left: 3px solid var(--gold);
+      padding: 16px 28px;
+      font-size: 16px;
+      color: rgba(255,255,255,0.85);
+      max-width: 600px;
+      text-align: left;
+      animation: fadeUp 0.8s 0.5s ease both;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 2px;
+      opacity: 0.6;
+      animation: bounce 2s infinite;
+      writing-mode: vertical-rl;
+    }
+
+    /* ── Sticky Nav ── */
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      background: rgba(13,27,62,0.95);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      transition: box-shadow 0.3s;
+    }
+
+    .sticky-nav.scrolled {
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+
+    .sticky-nav ul {
+      list-style: none;
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: none;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .sticky-nav ul::-webkit-scrollbar { display: none; }
+
+    .sticky-nav li a {
+      display: block;
+      padding: 14px 16px;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      transition: color 0.2s;
+      border-bottom: 2px solid transparent;
+    }
+
+    .sticky-nav li a:hover,
+    .sticky-nav li a.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    /* ── Sections ── */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(24px, 4vw, 38px);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 3px;
+      background: var(--gold);
+      margin-top: 16px;
+      margin-bottom: 32px;
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--border), transparent);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ── Intro ── */
+    .intro-text {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 2;
+      background: var(--white);
+      border-radius: 12px;
+      padding: 32px 36px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    }
+
+    /* ── Teacher Card ── */
+    .teacher-card {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      border-radius: 16px;
+      padding: 40px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .teacher-card::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.15), transparent 70%);
+    }
+
+    .teacher-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .teacher-title {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+    }
+
+    .teacher-bio {
+      font-size: 14px;
+      line-height: 2;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 20px;
+    }
+
+    .teacher-achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .achievement-item {
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .achievement-item strong {
+      color: var(--gold-light);
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .teacher-footer {
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.9;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .team-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .team-card-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .team-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .team-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ── Tables ── */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      font-size: 13.5px;
+    }
+
+    thead {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    thead th {
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    tbody td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tbody tr:last-child td { border-bottom: none; }
+
+    tbody tr:nth-child(even) {
+      background: rgba(250,250,245,0.6);
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--gold-pale);
+      color: #8B6914;
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    .tag-primary {
+      background: rgba(13,27,62,0.08);
+      color: var(--navy);
+    }
+
+    /* ── Curriculum ── */
+    .curriculum-block {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .curriculum-header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 20px 28px;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .curriculum-header .num {
+      background: var(--gold);
+      color: var(--navy);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .curriculum-body {
+      padding: 24px 28px;
+    }
+
+    .curriculum-item {
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+      display: flex;
+      gap: 16px;
+    }
+
+    .curriculum-item:last-child { border-bottom: none; }
+
+    .curriculum-item-title {
+      font-weight: 700;
+      color: var(--navy);
+      min-width: 140px;
+      flex-shrink: 0;
+    }
+
+    .curriculum-item-content {
+      color: var(--text-muted);
+      font-size: 13.5px;
+    }
+
+    /* ── Pricing ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .pricing-card {
+      background: var(--white);
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+
+    .pricing-card.featured {
+      border-color: var(--gold);
+      background: linear-gradient(180deg, rgba(201,168,76,0.06) 0%, var(--white) 100%);
+    }
+
+    .pricing-card-label {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .pricing-card-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .pricing-card-price {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .pricing-card-price span {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    .pricing-card-note {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    /* ── FAQ ── */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      padding: 18px 24px;
+      font-weight: 700;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    .faq-q:hover { background: rgba(201,168,76,0.05); }
+
+    .faq-q::before {
+      content: 'Q';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: var(--gold);
+      color: var(--white);
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .faq-q::after {
+      content: '+';
+      font-size: 20px;
+      color: var(--gold);
+      font-weight: 300;
+      transition: transform 0.2s;
+    }
+
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+
+    .faq-a {
+      display: none;
+      padding: 0 24px 18px 60px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
+
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--navy);
+      text-align: center;
+      padding: 80px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(201,168,76,0.1), transparent 70%);
+    }
+
+    .cta-section h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: clamp(24px, 4vw, 40px);
+      color: var(--white);
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.6);
+      font-size: 15px;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 36px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--gold);
+      color: var(--gold);
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #070D1E;
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .hero { padding: 48px 20px 80px; }
+      .teacher-card { padding: 24px 20px; }
+      .curriculum-body { padding: 16px 20px; }
+      .curriculum-item { flex-direction: column; gap: 4px; }
+      .curriculum-item-title { min-width: unset; }
+      .achievement-item strong { font-size: 16px; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HERO ═══ -->
+  <div class="hero" id="top">
+    <div class="hero-badge">2026 · 暑假班</div>
+    <h1 class="hero-title">梅溪湖<span>小初高</span><br>贯通培养</h1>
+    <p class="hero-sub">2026 暑假招生简章</p>
+    <p class="hero-org">梅溪湖小初高贯通培养中心</p>
+    <div class="hero-slogan">
+      <strong>从小搭建竞赛体系，打通小初高升学快车道</strong><br><br>
+      「奥数思维 · 竞赛培优 · 学科启蒙」三线并行，竞赛名师领衔，零基础到省队一站式贯通培养。
+    </div>
+    <div class="hero-scroll">向下滚动</div>
+  </div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="sticky-nav" id="nav">
+    <ul>
+      <li><a href="#intro" onclick="smoothScroll(event, 'intro')">项目介绍</a></li>
+      <li><a href="#teacher" onclick="smoothScroll(event, 'teacher')">核心师资</a></li>
+      <li><a href="#programs" onclick="smoothScroll(event, 'programs')">班型设置</a></li>
+      <li><a href="#curriculum" onclick="smoothScroll(event, 'curriculum')">教学大纲</a></li>
+      <li><a href="#pricing" onclick="smoothScroll(event, 'pricing')">收费标准</a></li>
+      <li><a href="#faq" onclick="smoothScroll(event, 'faq')">常见问题</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══ INTRO ═══ -->
+  <section id="intro">
+    <span class="section-label">Project Overview</span>
+    <h2 class="section-title">项目介绍</h2>
+    <div class="intro-text reveal">
+      我们由<span style="color:var(--navy);font-weight:700">复旦大学竞赛金牌教练</span>领衔，专注打造「3-12 年级小初高贯通培养体系」，拒绝碎片化补课，从小学奥数启蒙到初高中竞赛培优，一站式搭建完整升学路径。<br><br>
+      本次暑假班聚焦「思维打底、能力衔接、竞赛启蒙」，用竞赛名师降维教学，帮孩子提前抢占升学优势，适配不同基础、不同目标的学员。
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══ TEACHER ═══ -->
+  <section id="teacher">
+    <span class="section-label">Core Faculty</span>
+    <h2 class="section-title">核心师资</h2>
+
+    <div class="teacher-card reveal" style="margin-bottom:32px">
+      <div class="teacher-name">赵老师</div>
+      <div class="teacher-title">竞赛金牌教练 · 复旦大学</div>
+      <div class="teacher-bio">毕业于复旦大学，拥有<span style="color:var(--gold-light)">8 年数学竞赛</span>、<span style="color:var(--gold-light)">7 年物理竞赛</span>一线教学经验，是从竞赛赛场走出来的实战派名师，更是小初高贯通培养体系的核心领路人。</div>
+      <div class="teacher-achievements">
+        <div class="achievement-item"><strong>9 人</strong>省队 / 国家集训队学员</div>
+        <div class="achievement-item"><strong>6 人</strong>CMO 金牌</div>
+        <div class="achievement-item"><strong>5 人</strong>女奥金牌</div>
+        <div class="achievement-item"><strong>40+</strong>省一学员（数学）</div>
+        <div class="achievement-item"><strong>16 人</strong>CPHO 金银牌</div>
+        <div class="achievement-item"><strong>60+</strong>省一学员（物理）</div>
+        <div class="achievement-item"><strong>15+</strong>每年考入清北</div>
+        <div class="achievement-item"><strong>数百名</strong>直升长郡雅礼</div>
+      </div>
+      <div class="teacher-footer">
+        📌 教学优势：擅长将初高中竞赛思维降维拆解，适配小学阶段孩子理解，从小学奥数启蒙到初高中竞赛培优全体系贯通，真正帮孩子搭建完整升学路径。
+      </div>
+    </div>
+
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-card-icon">📚</div>
+        <h4>资深学科教师</h4>
+        <p>深耕本地小初高教学，熟悉学情与升学政策</p>
+      </div>
+      <div class="team-card">
+        <div class="team-card-icon">🎓</div>
+        <h4>专属助教</h4>
+        <p>全程跟进课堂签到、作业批改、学习反馈，高效服务家长</p>
+      </div>
+      <div class="team-card">
+        <div class="team-card-icon">🗺️</div>
+        <h4>升学规划师</h4>
+        <p>提供竞赛报名、名校升学、小初高衔接一站式规划</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══ PROGRAMS ═══ -->
+  <section id="programs">
+    <span class="section-label">Programs</span>
+    <h2 class="section-title">班型设置</h2>
+
+    <h3 style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--navy); margin-bottom:16px;">🧒 小学段</h3>
+    <div class="table-wrap reveal" style="margin-bottom:32px">
+      <table>
+        <thead>
+          <tr>
+            <th>班型</th>
+            <th>年级</th>
+            <th>课程定位</th>
+            <th>核心内容</th>
+            <th>适合学员</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="tag tag-primary">入门</span> 零基础奥数启蒙班</td>
+            <td>3-4 年级</td>
+            <td>奥数入门，思维打底</td>
+            <td>计算思维、应用题模型、逻辑推理、图形认知</td>
+            <td>从未接触奥数，想培养数学思维的孩子</td>
+          </tr>
+          <tr>
+            <td><span class="tag tag-primary">进阶</span> 小学浅奥班</td>
+            <td>3-6 年级</td>
+            <td>校内拓展，思维提升</td>
+            <td>校内知识点延伸、经典奥数题型、解题技巧</td>
+            <td>校内成绩良好，想拓展思维、衔接初中的孩子</td>
+          </tr>
+          <tr>
+            <td><span class="tag">竞赛</span> 小学深奥班</td>
+            <td>4-6 年级</td>
+            <td>竞赛启蒙，拔高培优</td>
+            <td>数论、几何、组合、竞赛真题、思维模型</td>
+            <td>校内成绩优异，有奥数基础，目标竞赛/名校的孩子</td>
+          </tr>
+          <tr>
+            <td><span class="tag">衔接</span> 新六年级数学衔接班</td>
+            <td>新六年级</td>
+            <td>小学拔高 + 初中预科</td>
+            <td>小学奥数深化、初中数学预科、思维进阶</td>
+            <td>学有余力，想提前学初中内容、抢占升学优势的孩子</td>
+          </tr>
+          <tr>
+            <td><span class="tag">启蒙</span> 新六年级物理启蒙班</td>
+            <td>新六年级</td>
+            <td>物理兴趣启蒙</td>
+            <td>生活物理、实验探究、物理思维入门</td>
+            <td>对科学感兴趣，想提前启蒙物理的孩子</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--navy); margin-bottom:16px;">🧑 初中段</h3>
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>班型</th>
+            <th>年级</th>
+            <th>课程定位</th>
+            <th>核心内容</th>
+            <th>适合学员</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="tag tag-primary">衔接</span> 新初一数学衔接班</td>
+            <td>新初一</td>
+            <td>小学升初中过渡</td>
+            <td>初中数学体系搭建、计算基础、代数入门、几何启蒙</td>
+            <td>小升初学员，提前适应初中数学节奏</td>
+          </tr>
+          <tr>
+            <td><span class="tag tag-primary">进阶</span> 新初二数学培优班</td>
+            <td>新初二</td>
+            <td>校内拔高 + 竞赛衔接</td>
+            <td>初中重难点深化、竞赛基础题型、解题模型</td>
+            <td>校内成绩优异，想冲刺初中联赛的孩子</td>
+          </tr>
+          <tr>
+            <td><span class="tag">⭐亲授</span> 初中数学联赛班</td>
+            <td>新初一/新初二</td>
+            <td>竞赛培优（赵老师亲授）</td>
+            <td>联赛真题、数论、几何、组合、竞赛思维</td>
+            <td>数学基础扎实，目标竞赛升学的孩子</td>
+          </tr>
+          <tr>
+            <td><span class="tag tag-primary">启蒙</span> 新初一物理启蒙班</td>
+            <td>新初一</td>
+            <td>物理兴趣启蒙</td>
+            <td>初中物理入门、实验操作、思维模型</td>
+            <td>想提前学物理，为初中竞赛打基础的孩子</td>
+          </tr>
+          <tr>
+            <td><span class="tag">⭐亲授</span> 物理竞赛启蒙班</td>
+            <td>新初二+</td>
+            <td>竞赛培优（赵老师亲授）</td>
+            <td>CPHO 基础、物理思维、实验探究、真题解析</td>
+            <td>物理基础扎实，目标物理竞赛的孩子</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:var(--gold-pale); border-left:4px solid var(--gold); border-radius:8px; padding:16px 20px; margin-top:20px; font-size:13px; color:#7A5C1E; line-height:1.8;">
+      📋 <strong>统一说明：</strong>所有班型暑假共 <strong>15 次课</strong>，每次课 <strong>2 小时</strong>；班额：精品小班，保证教学质量；上课形式：线下授课，配套课后答疑、学习反馈。
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══ CURRICULUM ═══ -->
+  <section id="curriculum">
+    <span class="section-label">Curriculum</span>
+    <h2 class="section-title">教学大纲</h2>
+
+    <h3 style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--navy); margin-bottom:16px;">🧒 小学段</h3>
+
+    <div class="curriculum-block reveal">
+      <div class="curriculum-header"><div class="num">1</div>零基础 / 浅奥班（3-4 年级）</div>
+      <div class="curriculum-body">
+        <div class="curriculum-item"><div class="curriculum-item-title">计算专题</div><div class="curriculum-item-content">速算巧算、等差数列、定义新运算</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">应用题专题</div><div class="curriculum-item-content">和差倍、年龄问题、盈亏问题、鸡兔同笼</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">几何专题</div><div class="curriculum-item-content">图形计数、周长面积、立体图形认知</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">逻辑推理</div><div class="curriculum-item-content">找规律、抽屉原理、枚举法</div></div>
+      </div>
+    </div>
+
+    <div class="curriculum-block reveal">
+      <div class="curriculum-header"><div class="num">2</div>深奥班（4-6 年级）</div>
+      <div class="curriculum-body">
+        <div class="curriculum-item"><div class="curriculum-item-title">数论专题</div><div class="curriculum-item-content">因数倍数、质数合数、余数问题、进制</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">几何专题</div><div class="curriculum-item-content">五大模型、圆与扇形、立体几何</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">行程专题</div><div class="curriculum-item-content">相遇追及、流水行船、火车过桥</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">竞赛真题</div><div class="curriculum-item-content">华杯赛、希望杯经典题型，思维拔高</div></div>
+      </div>
+    </div>
+
+    <div class="curriculum-block reveal">
+      <div class="curriculum-header"><div class="num">3</div>新六年级衔接班</div>
+      <div class="curriculum-body">
+        <div class="curriculum-item"><div class="curriculum-item-title">小学奥数深化</div><div class="curriculum-item-content">数论、几何、组合综合</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">初中数学预科</div><div class="curriculum-item-content">有理数、代数式、一元一次方程</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">思维进阶</div><div class="curriculum-item-content">竞赛基础题型，衔接初中联赛</div></div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--navy); margin-bottom:16px; margin-top:40px;">🧑 初中段</h3>
+
+    <div class="curriculum-block reveal">
+      <div class="curriculum-header"><div class="num">4</div>新初一衔接班</div>
+      <div class="curriculum-body">
+        <div class="curriculum-item"><div class="curriculum-item-title">代数基础</div><div class="curriculum-item-content">有理数运算、代数式化简</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">方程</div><div class="curriculum-item-content">一元一次方程、二元一次方程组</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">几何入门</div><div class="curriculum-item-content">线段、角、三角形基础</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">方法论</div><div class="curriculum-item-content">初中数学学习方法与思维搭建</div></div>
+      </div>
+    </div>
+
+    <div class="curriculum-block reveal">
+      <div class="curriculum-header"><div class="num">5</div>初联班（赵老师亲授）</div>
+      <div class="curriculum-body">
+        <div class="curriculum-item"><div class="curriculum-item-title">数论</div><div class="curriculum-item-content">同余、不定方程、数论综合</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">几何</div><div class="curriculum-item-content">三角形、圆、几何变换、联赛真题</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">组合</div><div class="curriculum-item-content">计数、概率、组合数学</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">竞赛冲刺</div><div class="curriculum-item-content">竞赛思维训练，冲刺初中联赛</div></div>
+      </div>
+    </div>
+
+    <div class="curriculum-block reveal">
+      <div class="curriculum-header"><div class="num">6</div>物理启蒙 / 竞赛班（赵老师亲授）</div>
+      <div class="curriculum-body">
+        <div class="curriculum-item"><div class="curriculum-item-title">物理启蒙</div><div class="curriculum-item-content">力学、声学、光学基础，生活物理实验</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">竞赛启蒙</div><div class="curriculum-item-content">CPHO 基础题型、物理思维、实验探究</div></div>
+        <div class="curriculum-item"><div class="curriculum-item-title">衔接</div><div class="curriculum-item-content">初高中物理衔接，为高中竞赛打基础</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══ PRICING ═══ -->
+  <section id="pricing">
+    <span class="section-label">Tuition</span>
+    <h2 class="section-title">收费标准</h2>
+    <div class="pricing-grid reveal">
+      <div class="pricing-card">
+        <div class="pricing-card-label">小学段</div>
+        <div class="pricing-card-name">小学基础 / 进阶班</div>
+        <div class="pricing-card-price">XX<span>元 / 15次课</span></div>
+        <div class="pricing-card-note">零基础奥数启蒙 · 浅奥 · 深奥</div>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-card-label">初中段</div>
+        <div class="pricing-card-name">初中数学 / 物理班</div>
+        <div class="pricing-card-price">XX<span>元 / 15次课</span></div>
+        <div class="pricing-card-note">衔接班 · 培优班 · 物理启蒙</div>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-card-label">⭐ 赵老师亲授</div>
+        <div class="pricing-card-name">竞赛精英班</div>
+        <div class="pricing-card-price">XX<span>元 / 15次课</span></div>
+        <div class="pricing-card-note">初联班 · 物理竞赛启蒙班</div>
+      </div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,rgba(201,168,76,0.1),rgba(201,168,76,0.04)); border:1px solid rgba(201,168,76,0.3); border-radius:12px; padding:24px 28px; margin-top:28px; text-align:center;">
+      <div style="font-size:20px; margin-bottom:8px;">🎁 早鸟优惠</div>
+      <div style="font-size:14px; color:var(--text-muted);">欢迎咨询具体优惠政策，早报名早锁定学位！</div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══ FAQ ═══ -->
+  <section id="faq">
+    <span class="section-label">FAQ</span>
+    <h2 class="section-title">常见问题</h2>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">孩子没学过奥数能报吗？</div>
+        <div class="faq-a">开设零基础启蒙班，从入门到竞赛全体系覆盖，零基础也能稳步跟上。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">暑假 15 次课能学到什么？</div>
+        <div class="faq-a">聚焦核心知识点，搭建完整思维框架，完成阶段提升，为新学期 / 竞赛打基础。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">赵老师会带小学班吗？</div>
+        <div class="faq-a">赵老师亲授初中联赛、物理竞赛班，小学段由资深竞赛名师降维教学，赵老师全程把控教学体系。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">课后有反馈吗？</div>
+        <div class="faq-a">每周统一课堂反馈 + 学生学习情况私发，阶段测评可视化成果，让家长全程安心。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">学有余力的孩子可以提前学初中内容吗？</div>
+        <div class="faq-a">开设新六年级数学衔接班，学有余力的孩子可提前学习初中内容，抢占升学优势。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <div class="cta-section">
+    <h2>开启竞赛之路，从这个暑假开始</h2>
+    <p>名额有限，欢迎咨询报名详情</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-gold">📞 立即咨询报名</a>
+      <a href="#programs" class="btn btn-outline" onclick="smoothScroll(event,'programs')">查看全部班型</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 梅溪湖小初高贯通培养中心 · 专注竞赛培优升学</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    function smoothScroll(e, id) {
+      e.preventDefault();
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // FAQ toggle
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      item.classList.toggle('open');
+    }
+
+    // Sticky nav shadow
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Active nav link
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.sticky-nav a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) cur = s.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+      });
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
