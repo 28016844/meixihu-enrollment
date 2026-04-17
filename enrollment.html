@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>梅溪湖小初高贯通培养 2026 暑假招生简章</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>弦动数理小初高贯通培养 2026 暑假招生简章</title>
   <style>
     :root {
       --navy: #0D1B3E;
@@ -24,14 +22,14 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Noto Sans SC', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       background: var(--cream);
       color: var(--text);
       line-height: 1.8;
       font-size: 15px;
     }
 
-    /* ── Hero ── */
+    /* Hero */
     .hero {
       background: var(--navy);
       position: relative;
@@ -78,7 +76,6 @@
     }
 
     .hero-title {
-      font-family: 'Noto Serif SC', serif;
       font-size: clamp(32px, 6vw, 68px);
       font-weight: 900;
       color: var(--white);
@@ -89,12 +86,9 @@
       animation: fadeUp 0.8s 0.15s ease both;
     }
 
-    .hero-title span {
-      color: var(--gold);
-    }
+    .hero-title span { color: var(--gold); }
 
     .hero-sub {
-      font-family: 'Noto Serif SC', serif;
       font-size: clamp(18px, 3vw, 28px);
       font-weight: 600;
       color: var(--gold-light);
@@ -141,7 +135,7 @@
       writing-mode: vertical-rl;
     }
 
-    /* ── Sticky Nav ── */
+    /* Sticky Nav */
     .sticky-nav {
       position: sticky;
       top: 0;
@@ -152,9 +146,7 @@
       transition: box-shadow 0.3s;
     }
 
-    .sticky-nav.scrolled {
-      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
-    }
+    .sticky-nav.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.3); }
 
     .sticky-nav ul {
       list-style: none;
@@ -186,7 +178,7 @@
       border-bottom-color: var(--gold);
     }
 
-    /* ── Sections ── */
+    /* Sections */
     section {
       max-width: 900px;
       margin: 0 auto;
@@ -203,7 +195,6 @@
     }
 
     .section-title {
-      font-family: 'Noto Serif SC', serif;
       font-size: clamp(24px, 4vw, 38px);
       font-weight: 700;
       color: var(--navy);
@@ -228,7 +219,7 @@
       margin: 0 auto;
     }
 
-    /* ── Intro ── */
+    /* Intro */
     .intro-text {
       font-size: 16px;
       color: var(--text-muted);
@@ -240,7 +231,7 @@
       box-shadow: 0 2px 16px rgba(0,0,0,0.04);
     }
 
-    /* ── Teacher Card ── */
+    /* Teacher Card */
     .teacher-card {
       background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
       border-radius: 16px;
@@ -262,7 +253,6 @@
     }
 
     .teacher-name {
-      font-family: 'Noto Serif SC', serif;
       font-size: 28px;
       font-weight: 700;
       color: var(--gold);
@@ -281,6 +271,22 @@
       line-height: 2;
       color: rgba(255,255,255,0.8);
       margin-bottom: 20px;
+    }
+
+    .teacher-history {
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    .teacher-history-title {
+      color: var(--gold-light);
+      font-weight: 600;
+      margin-bottom: 8px;
     }
 
     .teacher-achievements {
@@ -331,10 +337,7 @@
       text-align: center;
     }
 
-    .team-card-icon {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
+    .team-card-icon { font-size: 32px; margin-bottom: 12px; }
 
     .team-card h4 {
       font-size: 15px;
@@ -349,7 +352,7 @@
       line-height: 1.7;
     }
 
-    /* ── Tables ── */
+    /* Tables */
     .table-wrap {
       overflow-x: auto;
       border-radius: 12px;
@@ -364,10 +367,7 @@
       font-size: 13.5px;
     }
 
-    thead {
-      background: var(--navy);
-      color: var(--white);
-    }
+    thead { background: var(--navy); color: var(--white); }
 
     thead th {
       padding: 14px 16px;
@@ -384,9 +384,12 @@
     }
 
     tbody tr:last-child td { border-bottom: none; }
+    tbody tr:nth-child(even) { background: rgba(250,250,245,0.6); }
 
-    tbody tr:nth-child(even) {
-      background: rgba(250,250,245,0.6);
+    .table-group-header {
+      background: var(--gold-pale);
+      font-weight: 700;
+      color: var(--navy);
     }
 
     .tag {
@@ -399,72 +402,10 @@
       font-weight: 500;
     }
 
-    .tag-primary {
-      background: rgba(13,27,62,0.08);
-      color: var(--navy);
-    }
+    .tag-primary { background: rgba(13,27,62,0.08); color: var(--navy); }
+    .tag-gold { background: var(--gold); color: var(--navy); }
 
-    /* ── Curriculum ── */
-    .curriculum-block {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
-      margin-bottom: 24px;
-    }
-
-    .curriculum-header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 20px 28px;
-      font-family: 'Noto Serif SC', serif;
-      font-size: 18px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .curriculum-header .num {
-      background: var(--gold);
-      color: var(--navy);
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-
-    .curriculum-body {
-      padding: 24px 28px;
-    }
-
-    .curriculum-item {
-      padding: 12px 0;
-      border-bottom: 1px dashed var(--border);
-      display: flex;
-      gap: 16px;
-    }
-
-    .curriculum-item:last-child { border-bottom: none; }
-
-    .curriculum-item-title {
-      font-weight: 700;
-      color: var(--navy);
-      min-width: 140px;
-      flex-shrink: 0;
-    }
-
-    .curriculum-item-content {
-      color: var(--text-muted);
-      font-size: 13.5px;
-    }
-
-    /* ── Pricing ── */
+    /* Pricing */
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -499,7 +440,6 @@
     }
 
     .pricing-card-name {
-      font-family: 'Noto Serif SC', serif;
       font-size: 20px;
       font-weight: 700;
       color: var(--navy);
@@ -525,12 +465,8 @@
       margin-top: 12px;
     }
 
-    /* ── FAQ ── */
-    .faq-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 16px; }
 
     .faq-item {
       background: var(--white);
@@ -589,7 +525,7 @@
 
     .faq-item.open .faq-a { display: block; }
 
-    /* ── CTA ── */
+    /* CTA */
     .cta-section {
       background: var(--navy);
       text-align: center;
@@ -606,7 +542,6 @@
     }
 
     .cta-section h2 {
-      font-family: 'Noto Serif SC', serif;
       font-size: clamp(24px, 4vw, 40px);
       color: var(--white);
       margin-bottom: 16px;
@@ -646,17 +581,10 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.3);
     }
 
-    .btn-gold {
-      background: var(--gold);
-      color: var(--navy);
-    }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-outline { border: 2px solid var(--gold); color: var(--gold); }
 
-    .btn-outline {
-      border: 2px solid var(--gold);
-      color: var(--gold);
-    }
-
-    /* ── Footer ── */
+    /* Footer */
     footer {
       background: #070D1E;
       text-align: center;
@@ -665,7 +593,7 @@
       color: rgba(255,255,255,0.3);
     }
 
-    /* ── Animations ── */
+    /* Animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
       to { opacity: 1; transform: translateY(0); }
@@ -682,18 +610,12 @@
       transition: opacity 0.6s ease, transform 0.6s ease;
     }
 
-    .reveal.visible {
-      opacity: 1;
-      transform: none;
-    }
+    .reveal.visible { opacity: 1; transform: none; }
 
-    /* ── Responsive ── */
+    /* Responsive */
     @media (max-width: 640px) {
       .hero { padding: 48px 20px 80px; }
       .teacher-card { padding: 24px 20px; }
-      .curriculum-body { padding: 16px 20px; }
-      .curriculum-item { flex-direction: column; gap: 4px; }
-      .curriculum-item-title { min-width: unset; }
       .achievement-item strong { font-size: 16px; }
       .cta-buttons { flex-direction: column; align-items: center; }
     }
@@ -701,12 +623,12 @@
 </head>
 <body>
 
-  <!-- ═══ HERO ═══ -->
+  <!-- HERO -->
   <div class="hero" id="top">
     <div class="hero-badge">2026 · 暑假班</div>
-    <h1 class="hero-title">梅溪湖<span>小初高</span><br>贯通培养</h1>
+    <h1 class="hero-title">弦动数理<span>小初高</span><br>贯通培养</h1>
     <p class="hero-sub">2026 暑假招生简章</p>
-    <p class="hero-org">梅溪湖小初高贯通培养中心</p>
+    <p class="hero-org">弦动数理小初高贯通培养中心</p>
     <div class="hero-slogan">
       <strong>从小搭建竞赛体系，打通小初高升学快车道</strong><br><br>
       「奥数思维 · 竞赛培优 · 学科启蒙」三线并行，竞赛名师领衔，零基础到省队一站式贯通培养。
@@ -714,39 +636,44 @@
     <div class="hero-scroll">向下滚动</div>
   </div>
 
-  <!-- ═══ NAV ═══ -->
+  <!-- NAV -->
   <nav class="sticky-nav" id="nav">
     <ul>
       <li><a href="#intro" onclick="smoothScroll(event, 'intro')">项目介绍</a></li>
       <li><a href="#teacher" onclick="smoothScroll(event, 'teacher')">核心师资</a></li>
       <li><a href="#programs" onclick="smoothScroll(event, 'programs')">班型设置</a></li>
-      <li><a href="#curriculum" onclick="smoothScroll(event, 'curriculum')">教学大纲</a></li>
       <li><a href="#pricing" onclick="smoothScroll(event, 'pricing')">收费标准</a></li>
       <li><a href="#faq" onclick="smoothScroll(event, 'faq')">常见问题</a></li>
     </ul>
   </nav>
 
-  <!-- ═══ INTRO ═══ -->
+  <!-- INTRO -->
   <section id="intro">
     <span class="section-label">Project Overview</span>
     <h2 class="section-title">项目介绍</h2>
     <div class="intro-text reveal">
-      我们由<span style="color:var(--navy);font-weight:700">复旦大学竞赛金牌教练</span>领衔，专注打造「3-12 年级小初高贯通培养体系」，拒绝碎片化补课，从小学奥数启蒙到初高中竞赛培优，一站式搭建完整升学路径。<br><br>
-      本次暑假班聚焦「思维打底、能力衔接、竞赛启蒙」，用竞赛名师降维教学，帮孩子提前抢占升学优势，适配不同基础、不同目标的学员。
+      我们由<span style="color:var(--navy);font-weight:700">CMO竞赛金牌教练以及国家集训队选手</span>领衔，专注打造「3-12 年级小初高贯通培养体系」，拒绝碎片化补课，不走弯路，从小学奥数启蒙到初高中竞赛培优，一站式搭建完整升学路径。<br><br>
+      本次暑假班聚焦「思维打底、能力衔接、竞赛启蒙」，用金牌竞赛名师降维教学，帮孩子提前抢占升学优势，适配不同基础、不同升学目标的学员。
     </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- ═══ TEACHER ═══ -->
+  <!-- TEACHER -->
   <section id="teacher">
     <span class="section-label">Core Faculty</span>
     <h2 class="section-title">核心师资</h2>
 
     <div class="teacher-card reveal" style="margin-bottom:32px">
       <div class="teacher-name">赵老师</div>
-      <div class="teacher-title">竞赛金牌教练 · 复旦大学</div>
-      <div class="teacher-bio">毕业于复旦大学，拥有<span style="color:var(--gold-light)">8 年数学竞赛</span>、<span style="color:var(--gold-light)">7 年物理竞赛</span>一线教学经验，是从竞赛赛场走出来的实战派名师，更是小初高贯通培养体系的核心领路人。</div>
+      <div class="teacher-title">数竞CMO金牌、国集选手 · 物竞CPHO铜牌 · 复旦大学</div>
+      <div class="teacher-bio">毕业于复旦大学，拥有<span style="color:var(--gold-light)">8 年数学竞赛</span>、<span style="color:var(--gold-light)">7 年物理竞赛</span>一线教学经验，是从竞赛赛场走出来的实战派名师，更是弦动数理小初高贯通培养体系的核心领路人。</div>
+      
+      <div class="teacher-history">
+        <div class="teacher-history-title">📌 个人竞赛履历</div>
+        小学二年级起接受专业竞赛培训，多次斩获小学四大杯赛一等奖；初一获全国初中联赛一等奖，初三获 CMO 铜牌；高一 CMO 金牌并入选国家集训队（TST），高二获全国物理竞赛（CPHO）铜牌，数学、物理双赛道顶尖实力。
+      </div>
+
       <div class="teacher-achievements">
         <div class="achievement-item"><strong>9 人</strong>省队 / 国家集训队学员</div>
         <div class="achievement-item"><strong>6 人</strong>CMO 金牌</div>
@@ -765,7 +692,7 @@
     <div class="team-grid reveal">
       <div class="team-card">
         <div class="team-card-icon">📚</div>
-        <h4>资深学科教师</h4>
+        <h4>资深奥数/学科教师</h4>
         <p>深耕本地小初高教学，熟悉学情与升学政策</p>
       </div>
       <div class="team-card">
@@ -783,110 +710,66 @@
 
   <div class="section-divider"></div>
 
-  <!-- ═══ PROGRAMS ═══ -->
+  <!-- PROGRAMS -->
   <section id="programs">
     <span class="section-label">Programs</span>
     <h2 class="section-title">班型设置</h2>
 
-    <h3 style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--navy); margin-bottom:16px;">🧒 小学段</h3>
-    <div class="table-wrap reveal" style="margin-bottom:32px">
-      <table>
-        <thead>
-          <tr>
-            <th>班型</th>
-            <th>年级</th>
-            <th>课程定位</th>
-            <th>核心内容</th>
-            <th>适合学员</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="tag tag-primary">入门</span> 零基础奥数启蒙班</td>
-            <td>3-4 年级</td>
-            <td>奥数入门，思维打底</td>
-            <td>计算思维、应用题模型、逻辑推理、图形认知</td>
-            <td>从未接触奥数，想培养数学思维的孩子</td>
-          </tr>
-          <tr>
-            <td><span class="tag tag-primary">进阶</span> 小学浅奥班</td>
-            <td>3-6 年级</td>
-            <td>校内拓展，思维提升</td>
-            <td>校内知识点延伸、经典奥数题型、解题技巧</td>
-            <td>校内成绩良好，想拓展思维、衔接初中的孩子</td>
-          </tr>
-          <tr>
-            <td><span class="tag">竞赛</span> 小学深奥班</td>
-            <td>4-6 年级</td>
-            <td>竞赛启蒙，拔高培优</td>
-            <td>数论、几何、组合、竞赛真题、思维模型</td>
-            <td>校内成绩优异，有奥数基础，目标竞赛/名校的孩子</td>
-          </tr>
-          <tr>
-            <td><span class="tag">衔接</span> 新六年级数学衔接班</td>
-            <td>新六年级</td>
-            <td>小学拔高 + 初中预科</td>
-            <td>小学奥数深化、初中数学预科、思维进阶</td>
-            <td>学有余力，想提前学初中内容、抢占升学优势的孩子</td>
-          </tr>
-          <tr>
-            <td><span class="tag">启蒙</span> 新六年级物理启蒙班</td>
-            <td>新六年级</td>
-            <td>物理兴趣启蒙</td>
-            <td>生活物理、实验探究、物理思维入门</td>
-            <td>对科学感兴趣，想提前启蒙物理的孩子</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--navy); margin-bottom:16px;">🧑 初中段</h3>
     <div class="table-wrap reveal">
       <table>
         <thead>
           <tr>
-            <th>班型</th>
-            <th>年级</th>
+            <th>班型名称</th>
+            <th>招生对象</th>
             <th>课程定位</th>
-            <th>核心内容</th>
-            <th>适合学员</th>
+            <th>授课老师</th>
           </tr>
         </thead>
         <tbody>
+          <tr class="table-group-header"><td colspan="4">🧒 小学奥数体系</td></tr>
           <tr>
-            <td><span class="tag tag-primary">衔接</span> 新初一数学衔接班</td>
-            <td>新初一</td>
-            <td>小学升初中过渡</td>
-            <td>初中数学体系搭建、计算基础、代数入门、几何启蒙</td>
-            <td>小升初学员，提前适应初中数学节奏</td>
+            <td><span class="tag tag-primary">入门</span> 零基础奥数启蒙班</td>
+            <td>新三年级 + 各年级零基础</td>
+            <td>从零建立数学思维，打牢计算、逻辑、基础模型</td>
+            <td>资深教师</td>
           </tr>
           <tr>
-            <td><span class="tag tag-primary">进阶</span> 新初二数学培优班</td>
-            <td>新初二</td>
-            <td>校内拔高 + 竞赛衔接</td>
-            <td>初中重难点深化、竞赛基础题型、解题模型</td>
-            <td>校内成绩优异，想冲刺初中联赛的孩子</td>
+            <td><span class="tag tag-primary">进阶</span> 浅奥进阶班</td>
+            <td>新四年级、新五年级、新六年级</td>
+            <td>校内拓展延伸，轻奥数拔高，衔接初中思维</td>
+            <td>资深教师</td>
           </tr>
+          <tr>
+            <td><span class="tag">竞赛</span> 深奥培优班（竞赛向）</td>
+            <td>四年级、五年级拔尖学员</td>
+            <td>数论、几何、组合等竞赛核心精讲，培养竞赛思维</td>
+            <td><span class="tag tag-gold">赵老师亲授</span></td>
+          </tr>
+          <tr class="table-group-header"><td colspan="4">🔬 理科启蒙与衔接</td></tr>
+          <tr>
+            <td><span class="tag">启蒙</span> 物理启蒙班</td>
+            <td>新六年级、新七年级</td>
+            <td>趣味物理入门，搭建理科逻辑，为初中物理打底</td>
+            <td>资深教师</td>
+          </tr>
+          <tr>
+            <td><span class="tag tag-primary">衔接</span> 初中数学预科班</td>
+            <td>新六年级（学有余力）、新七年级</td>
+            <td>超前学初中代数、几何，小初衔接一步到位</td>
+            <td>资深教师</td>
+          </tr>
+          <tr class="table-group-header"><td colspan="4">🏆 初中竞赛体系</td></tr>
           <tr>
             <td><span class="tag">⭐亲授</span> 初中数学联赛班</td>
-            <td>新初一/新初二</td>
-            <td>竞赛培优（赵老师亲授）</td>
-            <td>联赛真题、数论、几何、组合、竞赛思维</td>
-            <td>数学基础扎实，目标竞赛升学的孩子</td>
+            <td>基础扎实、目标联赛的学员</td>
+            <td>联赛真题精讲，竞赛思维训练，直接冲击联赛</td>
+            <td><span class="tag tag-gold">赵老师亲授</span></td>
           </tr>
           <tr>
-            <td><span class="tag tag-primary">启蒙</span> 新初一物理启蒙班</td>
-            <td>新初一</td>
-            <td>物理兴趣启蒙</td>
-            <td>初中物理入门、实验操作、思维模型</td>
-            <td>想提前学物理，为初中竞赛打基础的孩子</td>
-          </tr>
-          <tr>
-            <td><span class="tag">⭐亲授</span> 物理竞赛启蒙班</td>
-            <td>新初二+</td>
-            <td>竞赛培优（赵老师亲授）</td>
-            <td>CPHO 基础、物理思维、实验探究、真题解析</td>
-            <td>物理基础扎实，目标物理竞赛的孩子</td>
+            <td><span class="tag">满员</span> 高阶竞赛班</td>
+            <td>高中数学/物理竞赛，已在读高中，竞赛基础扎实</td>
+            <td>国赛级别内容训练，走省队、国赛路径</td>
+            <td><span class="tag tag-gold">赵老师亲授（已满员）</span></td>
           </tr>
         </tbody>
       </table>
@@ -899,98 +782,28 @@
 
   <div class="section-divider"></div>
 
-  <!-- ═══ CURRICULUM ═══ -->
-  <section id="curriculum">
-    <span class="section-label">Curriculum</span>
-    <h2 class="section-title">教学大纲</h2>
-
-    <h3 style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--navy); margin-bottom:16px;">🧒 小学段</h3>
-
-    <div class="curriculum-block reveal">
-      <div class="curriculum-header"><div class="num">1</div>零基础 / 浅奥班（3-4 年级）</div>
-      <div class="curriculum-body">
-        <div class="curriculum-item"><div class="curriculum-item-title">计算专题</div><div class="curriculum-item-content">速算巧算、等差数列、定义新运算</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">应用题专题</div><div class="curriculum-item-content">和差倍、年龄问题、盈亏问题、鸡兔同笼</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">几何专题</div><div class="curriculum-item-content">图形计数、周长面积、立体图形认知</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">逻辑推理</div><div class="curriculum-item-content">找规律、抽屉原理、枚举法</div></div>
-      </div>
-    </div>
-
-    <div class="curriculum-block reveal">
-      <div class="curriculum-header"><div class="num">2</div>深奥班（4-6 年级）</div>
-      <div class="curriculum-body">
-        <div class="curriculum-item"><div class="curriculum-item-title">数论专题</div><div class="curriculum-item-content">因数倍数、质数合数、余数问题、进制</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">几何专题</div><div class="curriculum-item-content">五大模型、圆与扇形、立体几何</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">行程专题</div><div class="curriculum-item-content">相遇追及、流水行船、火车过桥</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">竞赛真题</div><div class="curriculum-item-content">华杯赛、希望杯经典题型，思维拔高</div></div>
-      </div>
-    </div>
-
-    <div class="curriculum-block reveal">
-      <div class="curriculum-header"><div class="num">3</div>新六年级衔接班</div>
-      <div class="curriculum-body">
-        <div class="curriculum-item"><div class="curriculum-item-title">小学奥数深化</div><div class="curriculum-item-content">数论、几何、组合综合</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">初中数学预科</div><div class="curriculum-item-content">有理数、代数式、一元一次方程</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">思维进阶</div><div class="curriculum-item-content">竞赛基础题型，衔接初中联赛</div></div>
-      </div>
-    </div>
-
-    <h3 style="font-family:'Noto Serif SC',serif; font-size:18px; color:var(--navy); margin-bottom:16px; margin-top:40px;">🧑 初中段</h3>
-
-    <div class="curriculum-block reveal">
-      <div class="curriculum-header"><div class="num">4</div>新初一衔接班</div>
-      <div class="curriculum-body">
-        <div class="curriculum-item"><div class="curriculum-item-title">代数基础</div><div class="curriculum-item-content">有理数运算、代数式化简</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">方程</div><div class="curriculum-item-content">一元一次方程、二元一次方程组</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">几何入门</div><div class="curriculum-item-content">线段、角、三角形基础</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">方法论</div><div class="curriculum-item-content">初中数学学习方法与思维搭建</div></div>
-      </div>
-    </div>
-
-    <div class="curriculum-block reveal">
-      <div class="curriculum-header"><div class="num">5</div>初联班（赵老师亲授）</div>
-      <div class="curriculum-body">
-        <div class="curriculum-item"><div class="curriculum-item-title">数论</div><div class="curriculum-item-content">同余、不定方程、数论综合</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">几何</div><div class="curriculum-item-content">三角形、圆、几何变换、联赛真题</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">组合</div><div class="curriculum-item-content">计数、概率、组合数学</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">竞赛冲刺</div><div class="curriculum-item-content">竞赛思维训练，冲刺初中联赛</div></div>
-      </div>
-    </div>
-
-    <div class="curriculum-block reveal">
-      <div class="curriculum-header"><div class="num">6</div>物理启蒙 / 竞赛班（赵老师亲授）</div>
-      <div class="curriculum-body">
-        <div class="curriculum-item"><div class="curriculum-item-title">物理启蒙</div><div class="curriculum-item-content">力学、声学、光学基础，生活物理实验</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">竞赛启蒙</div><div class="curriculum-item-content">CPHO 基础题型、物理思维、实验探究</div></div>
-        <div class="curriculum-item"><div class="curriculum-item-title">衔接</div><div class="curriculum-item-content">初高中物理衔接，为高中竞赛打基础</div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- ═══ PRICING ═══ -->
+  <!-- PRICING -->
   <section id="pricing">
     <span class="section-label">Tuition</span>
     <h2 class="section-title">收费标准</h2>
     <div class="pricing-grid reveal">
       <div class="pricing-card">
         <div class="pricing-card-label">小学段</div>
-        <div class="pricing-card-name">小学基础 / 进阶班</div>
+        <div class="pricing-card-name">小学基础/进阶班</div>
         <div class="pricing-card-price">XX<span>元 / 15次课</span></div>
-        <div class="pricing-card-note">零基础奥数启蒙 · 浅奥 · 深奥</div>
+        <div class="pricing-card-note">零基础奥数启蒙 · 浅奥进阶 · 深奥培优</div>
       </div>
       <div class="pricing-card">
         <div class="pricing-card-label">初中段</div>
-        <div class="pricing-card-name">初中数学 / 物理班</div>
+        <div class="pricing-card-name">初中数学/物理班</div>
         <div class="pricing-card-price">XX<span>元 / 15次课</span></div>
-        <div class="pricing-card-note">衔接班 · 培优班 · 物理启蒙</div>
+        <div class="pricing-card-note">衔接班 · 预科班 · 物理启蒙</div>
       </div>
       <div class="pricing-card featured">
         <div class="pricing-card-label">⭐ 赵老师亲授</div>
         <div class="pricing-card-name">竞赛精英班</div>
         <div class="pricing-card-price">XX<span>元 / 15次课</span></div>
-        <div class="pricing-card-note">初联班 · 物理竞赛启蒙班</div>
+        <div class="pricing-card-note">初联班 · 深奥培优班 · 物理竞赛</div>
       </div>
     </div>
 
@@ -1002,7 +815,7 @@
 
   <div class="section-divider"></div>
 
-  <!-- ═══ FAQ ═══ -->
+  <!-- FAQ -->
   <section id="faq">
     <span class="section-label">FAQ</span>
     <h2 class="section-title">常见问题</h2>
@@ -1030,7 +843,7 @@
     </div>
   </section>
 
-  <!-- ═══ CTA ═══ -->
+  <!-- CTA -->
   <div class="cta-section">
     <h2>开启竞赛之路，从这个暑假开始</h2>
     <p>名额有限，欢迎咨询报名详情</p>
@@ -1041,29 +854,25 @@
   </div>
 
   <footer>
-    <p>© 2026 梅溪湖小初高贯通培养中心 · 专注竞赛培优升学</p>
+    <p>© 2026 弦动数理小初高贯通培养中心 · 专注竞赛培优升学</p>
   </footer>
 
   <script>
-    // Smooth scroll
     function smoothScroll(e, id) {
       e.preventDefault();
       document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
     }
 
-    // FAQ toggle
     function toggleFaq(el) {
       const item = el.parentElement;
       item.classList.toggle('open');
     }
 
-    // Sticky nav shadow
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     });
 
-    // Active nav link
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.sticky-nav a');
     window.addEventListener('scroll', () => {
@@ -1076,7 +885,6 @@
       });
     });
 
-    // Reveal on scroll
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
